@@ -1,0 +1,37 @@
+{
+  "name": "development",
+  "description": "",
+  "json_class": "Chef::Environment",
+  "chef_type": "environment",
+
+  "default_attributes": {
+    "nginx": {
+      "sites": {
+        "lorekeepers.org": {
+          "inherits": "my-app",
+          "server_name": "lorekeepers.org.dev",
+          "docroot": "/vagrant/public",
+          "capistrano": false
+        }
+      }
+    },
+    "mysql": {
+      "users": {
+        "lorekeepers.org": {
+          "database_name": "lorekeepers.org"
+        }
+      }
+    }
+  },
+
+  "override_attributes": {
+    "capistrano": {
+      "group": false
+    },
+    "data-bag-merge": {
+      "environments": {
+        "encrypted": false
+      }
+    }
+  }
+}

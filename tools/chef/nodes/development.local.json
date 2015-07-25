@@ -1,0 +1,8 @@
+{
+  "run_list": [
+    "role[project-db]",
+    "role[project-web]",
+    "role[php56-development]"
+  ],
+  "environment": "development"
+}

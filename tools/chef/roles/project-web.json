@@ -1,0 +1,41 @@
+{
+  "name": "project-web",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "lorekeepers.org web role",
+  "run_list": [
+    "recipe[data-bag-merge::environment]",
+    "recipe[config-driven-helper::iptables-standard]",
+    "role[db-mysql55-client]",
+    "role[php56]",
+    "role[web-nginx]",
+    "recipe[config-driven-helper::capistrano]",
+    "recipe[config-driven-helper::packages]"
+  ],
+  "default_attributes": {
+    "nginx": {
+      "shared_config": {
+        "my-app": {
+          "protocols": ["http", "https"],
+          "capistrano": {
+            "owner": "deploy",
+            "group": "deploy",
+            "shared_folders": {
+              "readable": {
+                "folders": [
+                ]
+              },
+              "writeable": {
+                "owner": "apache",
+                "group": "apache",
+                "folders": [
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "packages": [ "git" ]
+  }
+}

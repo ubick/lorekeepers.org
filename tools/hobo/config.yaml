@@ -1,0 +1,12 @@
+---
+:name: lorekeepers.org
+:git_url: git@github.com:ubick/lorekeepers.org
+:seed:
+  :name: default
+  :url: git@github.com:inviqa/hobo-seed-default
+  :version: 41f538a
+:vm_ip: 10.81.37.73
+:hostname: lorekeepers.org.dev
+:asset_bucket: inviqa-assets-lorekeepers.org
+:vm:
+  :project_mount_path: "/vagrant"
