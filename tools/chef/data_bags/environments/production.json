@@ -1,0 +1,18 @@
+{
+  "id": "production",
+  "default_attributes": {
+    "mysql": {
+      "connections": {
+        "default": {
+          "password": "984rbgC42CF342f7j6"
+        }
+      },
+      "users": {
+        "lorekeepers.org": {
+          "database_name": "lorekeepers.org",
+          "password": "B'EvM9bXDm&Tn8Cx"
+        }
+      }
+    }
+  }
+}

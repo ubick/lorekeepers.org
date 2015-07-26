@@ -1,5 +1,5 @@
 {
-  "name": "development",
+  "name": "pipeline",
   "description": "",
   "json_class": "Chef::Environment",
   "chef_type": "environment",
@@ -7,11 +7,13 @@
   "default_attributes": {
     "apache": {
       "sites": {
-        "lorekeepers.org": {
+        "lorekeepers.org-qa": {
           "inherits": "my-app",
-          "server_name": "lorekeepers.org.dev",
-          "docroot": "/vagrant/public",
-          "capistrano": false
+          "docroot": "/var/www/lorekeepers.org-qa/current/public",
+          "server_name": "lorekeepers.org",
+          "capistrano": {
+            "deploy_to": "/var/www/lorekeepers.org"
+          }
         }
       }
     },
@@ -20,17 +22,6 @@
         "lorekeepers.org": {
           "database_name": "lorekeepers.org"
         }
-      }
-    }
-  },
-
-  "override_attributes": {
-    "capistrano": {
-      "group": false
-    },
-    "data-bag-merge": {
-      "environments": {
-        "encrypted": false
       }
     }
   }
