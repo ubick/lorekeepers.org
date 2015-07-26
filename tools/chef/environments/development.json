@@ -17,8 +17,11 @@
     },
     "mysql": {
       "users": {
-        "lorekeepers.org": {
-          "database_name": "lorekeepers.org"
+        "lorekeep_eqdkp": {
+          "database_name": "lorekeep_eqdkp"
+        },
+        "lorekeep_forum": {
+          "database_name": "lorekeep_forum"
         }
       }
     }

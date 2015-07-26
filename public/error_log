@@ -1,0 +1,8 @@
+[25-Jul-2015 03:51:02 Europe/Bucharest] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jul-2015 03:51:02 Europe/Bucharest] PHP Fatal error:  Unknown: Failed opening required '/home/lorekeep/public_html/viewcharacter.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in Unknown on line 0
+[25-Jul-2015 05:19:59 Europe/Bucharest] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jul-2015 05:19:59 Europe/Bucharest] PHP Fatal error:  Unknown: Failed opening required '/home/lorekeep/public_html/viewcharacter.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in Unknown on line 0
+[25-Jul-2015 05:59:22 Europe/Bucharest] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jul-2015 05:59:22 Europe/Bucharest] PHP Fatal error:  Unknown: Failed opening required '/home/lorekeep/public_html/viewcharacter.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in Unknown on line 0
+[25-Jul-2015 06:28:56 Europe/Bucharest] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jul-2015 06:28:56 Europe/Bucharest] PHP Fatal error:  Unknown: Failed opening required '/home/lorekeep/public_html/viewcharacter.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in Unknown on line 0

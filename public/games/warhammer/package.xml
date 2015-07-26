@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="game" version="1.0.7">
+	<folder>warhammer</folder>
+	<name>Warhammer Online</name>
+	<author>Sionaa</author>
+	<authorEmail>sionaa@mmo-stammtisch.de</authorEmail>
+	<creationDate>1365266864</creationDate>
+	<copyright>(C)2013 Sionaa</copyright>
+	<version>2.1</version>
+	<level>stable</level>
+	<description>- all races /w icons (20x20)
+- all classes /w icons (20x20 & 48x48)
+- predefined roles with corresponding role icons
+- a bunch of event icons
+- game specific background
+- predefined raid events</description>
+</install>

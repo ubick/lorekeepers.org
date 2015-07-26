@@ -1,0 +1,422 @@
+/*
+ * ClueTip styling.
+ * This affect how and where the tooltip will appear.
+ */
+
+#cluetip-close img {
+  border: 0;
+}
+#cluetip-title h3
+{
+	border: 0px !important;
+}
+#cluetip-title {
+  overflow: hidden;
+  border: 0px !important;
+}
+#cluetip-title #cluetip-close {
+  float: right;
+  position: relative;
+}
+#cluetip-waitimage {
+  width: 43px;
+  height: 11px;
+  position: absolute;
+  background-image: url(../../../wowhead/images/wait.gif);
+}
+.cluetip-arrows {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -11px;
+  height: 22px;
+  width: 11px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+#cluetip-extra {
+  display: none;
+}
+
+.cluetip-default {
+}
+
+.armory_tip a, .armory_tip a:active, .armory_tip a:visited, .armory_tip a:hover {
+	text-decoration: none;
+	padding-bottom: 2px;
+}
+
+/*
+ * Tooltip content styling.
+ * These stylings below affect how the contents of the tooltip will look.
+ */
+
+.armory_tt_main > table, .armory_tt_main > td {
+  font: 10px Verdana, Arial, Helvetica, sans-serif;
+}
+
+.armory_tt_main {
+  background: black;
+  padding: 3px;
+  border: 1px outset silver;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  text-align: left;
+  opacity:0.95;
+  -khtml-opacity: 0.95;
+  -moz-opacity: 0.95;
+  -webkit-opacity: 0.95;
+  text-align: left;
+}
+
+.armory_tt_main > img { border: 0px; }
+
+/* Header */
+.armory_tt_header {
+  background-color: #010121;
+  vertical-align: top;
+}
+
+/* Avatar */
+.armory_tt_avatar {
+  width: 64px;
+}
+
+/* Char info */
+.armory_tt_char_info {
+  width: 100%;
+  vertical-align: top;
+}
+
+.armory_tt_char_name {
+  color: #ffffff;
+  font-weight: bold;
+  display: block;
+}
+
+.armory_tt_char_guild {
+  color: #ffd517;
+  font-weight: bold;
+  display: block;
+}
+
+.armory_tt_char_stuff {
+  color: white;
+  display: block;
+}
+
+/* Talents */
+.armory_tt_talents { text-align: left; }
+.armory_tt_talents img { vertical-align: middle; width: 20px; height: 20px; clear: none; }
+
+.armory_tt_talent_spec {
+  color: #ffd517;
+  display: none;
+}
+
+.armory_tt_talent_trees {
+  padding-top: 0.5em;
+  color: white;
+  display: inline-block;
+}
+
+/* Buffs */
+ .armory_tt_buffs {
+   background-color: #010121;
+   width: 74px;
+   vertical-align: top;
+   text-align: left;
+ }
+
+ .armory_tt_buffs img {
+   border: 0px;
+ }
+
+/* Stats */
+.armory_tt_stats {
+  width: 100%;
+  border: 0px;
+  padding: 0px;
+  border-spacing:0px;
+  background-color: #111111;
+  vertical-align: top;
+  text-align: left;
+}
+
+.armory_tt_stats tr td { width: 50%; opacity:0.95;}
+
+.armory_tt_stat_health { background-color: #00BF00; color: white; }
+.armory_tt_stat_power_mana { background-color: #0070DD; color: white; }
+.armory_tt_stat_power_rage { background-color: #FF0040; color: white; }
+.armory_tt_stat_power_energy { background-color: #FFBF00; color: white; }
+.armory_tt_stat_primary { color: #00FF00; font-weight: bold; }
+.armory_tt_stat_shadow_spell { color: #A335EE; font-weight: bold; }
+.armory_tt_stat_fire_spell { color: #FF3300; font-weight: bold; }
+.armory_tt_stat_frost_spell { color: #0070DD; font-weight: bold; }
+.armory_tt_stat_arcane_spell { color: #d800cc; font-weight: bold; }
+.armory_tt_stat_nature_spell { color: #FF3300; font-weight: bold; }
+.armory_tt_stat_holy_spell { color: #FF3300; font-weight: bold; }
+.armory_tt_stat_generic { color: #ffd517; font-weight: bold; }
+.armory_tt_stat_melee_main_hand { color: #0070DD; font-weight: bold; }
+.armory_tt_stat_melee_off_hand { color: #00F080; font-weight: bold; }
+.armory_tt_stat_defensive { color: #d5d5d5; font-weight: bold; }
+.armory_tt_stat_mana_regen { color: #ff88FF; font-weight: bold; }
+.armory_tt_stat_healing { color: #ff88FF; font-weight: bold; }
+.armory_tt_stat_ranged { color: #FF3300; font-weight: bold; }
+
+.armory_tt_stat_value { background-color: #011101; color: white; font-weight: normal; }
+
+/* Professions */
+.armory_tt_professions {
+  width: 100%;
+  padding: 0px;
+  border: 0px;
+  border-spacing: 0px;
+  vertical-align: top;
+  text-align: left;
+  opacity:0.95;
+}
+
+.armory_tt_professions tr td { width: 50%; }
+
+.armory_tt_profession_name { background-color: #222222; color: #FFDDFF; font-weight: bold; }
+.armory_tt_profession_name img { vertical-align: middle; }
+.armory_tt_profession_skill { background-color: #022202; color: white; }
+
+/* Misc */
+.armory_tt_misc {
+	width: 100%;
+	padding: 0px;
+	border: 0px;
+	border-spacing: 0px;
+	vertical-align: top;
+	text-align: left;
+	opacity:0.95;
+}
+
+.armory_tt_misc tr td { width: 50%; height: 20px;}
+.armory_tt_misc_name { background-color: #222222; color: #68CCEF; font-weight: bold; }
+.armory_tt_misc_value { background-color: #022202; color: #FFFFFF; }
+
+/* Classes */
+.armory_tt_class_deathknight {
+		color: #7F0A1D !important;
+		text-decoration: none;
+}
+
+.armory_tt_class_druid {
+        color: #FF7C0A !important;
+        text-decoration: none;
+}
+
+.armory_tt_class_hunter {
+        color: #AAD372 !important;
+        text-decoration: none;
+}
+
+.armory_tt_class_mage {
+        color: #68CCEF !important;
+        text-decoration: none;
+}
+
+.armory_tt_class_paladin {
+        color: #F48CBA !important;
+        text-decoration: none;
+}
+
+.armory_tt_class_shaman {
+        color: #3556FD !important;
+        text-decoration: none;
+}
+
+.armory_tt_class_priest {
+        color: #FFFFFF !important;
+        text-decoration: none;
+}
+
+.armory_tt_class_rogue {
+        color: #FFF468 !important;
+        text-decoration: none;
+}
+
+.armory_tt_class_warlock {
+        color: #9382C9 !important;
+        text-decoration: none;
+}
+
+.armory_tt_class_warrior {
+        color: #C69B6D !important;
+        text-decoration: none;
+}
+
+/*
+ * Error styling
+ */
+.armory_error {
+  background: black;
+  padding: 5px;
+  border: 1px outset silver;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  text-align: left;
+  opacity:0.95;
+  -khtml-opacity: 0.95;
+  -moz-opacity: 0.95;
+  -webkit-opacity: 0.95;
+  text-align: left;
+  color: white;
+}
+
+/*
+ * Guild tooltip
+ */
+
+.armory_guild_main {
+  background: black;
+  padding: 3px;
+  border: 1px outset silver;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  text-align: left;
+  opacity:0.95;
+  -khtml-opacity: 0.95;
+  -moz-opacity: 0.95;
+  -webkit-opacity: 0.95;
+  text-align: left;
+  vertical-align: top;
+  color: white;
+  width: 250px;
+}
+
+.armory_guild_main > td { vertical-align: top; }
+.armory_guild_info { vertical-align: top; }
+
+.armory_guild_faction { vertical-align: middle; }
+.armory_guild_header { display: block; }
+
+.armory_guild_roster { padding-top: 0.5em; }
+
+/*
+ * Class (& maybe later, other) icons
+ */
+.armory_icon { vertical-align: middle; }
+
+/* Armory Recruit */
+.rep-table {
+	border: 1px solid #000000;
+	width: 300px;
+	font-size: 9px;
+}
+
+.rep-table th {
+	background-color: #3556FD;
+	color: #222222 !important;
+	text-align: center;
+	font-weight: bold;
+} 
+
+.rep-table td {
+	height: 15px;
+}
+
+.rep-box {
+	background: #222222;
+	border: 1px solid #000000;
+	text-align: center;
+	color: #ffffff;
+	height: 15px;
+}
+
+.rep-hated {
+	background-color: #CC2222;
+	height: 15px;
+	float: left;
+}
+
+.rep-hostile {
+	background-color: red;
+	height: 15px;
+	float: left;
+}
+
+.rep-unfriendly {
+	background-color: #EE6622;
+	height: 15px;
+	float: left;
+}
+
+.rep-neutral {
+	background-color: yellow;
+	height: 15px;
+	float: left;
+}
+
+.rep-friendly {
+	background-color: lime;
+	height: 15px;
+	float: left;
+}
+
+.rep-honored {
+	background-color: #00FF88;
+	height: 15px;
+	float: left;
+}
+
+.rep-revered {
+	background-color: #00FFCC;
+	height: 15px;
+	float: left;
+}
+
+.rep-exalted {
+	background-color: cyan;
+	height: 15px;	
+	float: left;
+}
+
+/* Talents */
+.talent-table {
+	width: 65%;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #0070DD;
+	color: #0070DD;
+}
+
+.talent-table-head {
+	background-color: #0070DD;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+.talent-hidden {
+	display: none;
+}
+
+.talent-shown {
+	display: inline;
+}
+
+/* Glyphs */
+.glyph-table {
+	width: 30%;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #0070DD;
+	color: #0070DD;
+}
+
+.glyph-table-head {
+	background-color: #0070DD;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+.glyph-title {
+	text-decoration: underline;
+	color: #0070DD;
+	padding-left: 5px;
+}

@@ -17,3 +17,8 @@ composer.phar
 .sass-cache/*
 *.css.map
 node_modules/*
+
+# Project
+config.php
+encrypted_data_bag_secret
+public/data/*

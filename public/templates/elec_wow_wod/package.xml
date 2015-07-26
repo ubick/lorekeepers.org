@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="template" version="1.0.10">
+	<name>Êlec WoW WoD</name>
+	<author>Êlec</author>
+	<authorEmail>Elec@dunkler-aufbruch.de</authorEmail>
+	<authorUrl>http://www.dunkler-aufbruch.de</authorUrl>
+	<creationDate>2014-09-26T19:15:46+00:00</creationDate>
+	<copyright>Êlec-Dunkler Aufbruch-Blackhand/GodMod-EQDKP</copyright>
+	<license>CC</license>
+	<version>0.1</version>
+	<description>Style for World of Warcraft - Warlords of Draenor - based on eqdkp_mop by GodMod</description>
+	<folder>elec_wow_wod</folder>
+</install>

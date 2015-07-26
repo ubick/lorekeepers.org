@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="plugin" version="1.0.16">
+	<folder>raidlogimport</folder>
+	<name>raidlogimport</name>
+	<author>Hoofy</author>
+	<authorEmail>bloodyhoof@gmx.net</authorEmail>
+	<creationDate>1385416609</creationDate>
+	<copyright>(C)2013 Hoofy</copyright>
+	<version>0.6.3.4</version>
+	<level>stable</level>
+	<description>Import your log! Easy point awarding, including per boss, per hour and per event and also for standbys. </description>
+</install>

@@ -1,15 +1,34 @@
-<html>
-<head>
-  <title>Welcome to your new project!</title>
-</head>
-<body>
-  <h1>Welcome to your new project!</h1>
-  <p>This project has been automatically generated for you from the "default" project seed by hobo.</p>
-  <h2>Next steps</h2>
-  <ul>
-    <li>Review the automatic commit made by hobo</li>
-    <li>If all is well, push the project to github with 'git push origin --all'</li>
-    <li>Delete public/index.php (this file) and get busy!</li>
-  </ul>
-</body>
-</html>
+<?php
+ /*
+ * Project:		EQdkp-Plus
+ * License:		Creative Commons - Attribution-Noncommercial-Share Alike 3.0 Unported
+ * Link:		http://creativecommons.org/licenses/by-nc-sa/3.0/
+ * -----------------------------------------------------------------------
+ * Began:		2002
+ * Date:		$Date: 2011-12-16 15:55:23 +0100 (Fri, 16 Dec 2011) $
+ * -----------------------------------------------------------------------
+ * @author		$Author: hoofy $
+ * @copyright	2006-2011 EQdkp-Plus Developer Team
+ * @link		http://eqdkp-plus.com
+ * @package		eqdkp-plus
+ * @version		$Rev: 11547 $
+ * 
+ * $Id: index.php 11547 2011-12-16 14:55:23Z hoofy $
+ */
+
+error_reporting(0);
+ini_set('display_errors', 0);
+define('EQDKP_INC', true);
+$eqdkp_root_path = './';
+include_once($eqdkp_root_path . 'common.php');
+
+// Redirect to the start page..
+if(registry::register('config')->get('start_page') ){
+	$redirect_url = registry::register('config')->get('start_page');
+	$redirect_url .= (strpos($redirect_url, '?') !== false) ? str_replace('?', '&', registry::get_const('SID')) : registry::get_const('SID');
+	redirect($redirect_url);
+}else{
+	redirect('viewnews.php' . registry::get_const('SID'));
+}
+
+?>

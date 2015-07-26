@@ -1,0 +1,385 @@
+/**
+* Wowhead (wowhead.com) Tooltips v3 - Main Stylesheet
+* By: Adam "crackpot" Koch (support@wowhead-tooltips.com)
+**/
+
+/**
+    Copyright (C) 2010  Adam Koch
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+**/
+
+/* Poor (Gray) */
+.quality0, .quality0 a:link, .quality0 a:active, .quality0 a:visited { color: gray !important; text-decoration: none; }
+.quality0 a:hover { color: gray !important; text-decoration: none; text-shadow: 1px 1px 1px rgba(0, 0, 0, .6); }
+
+/* Common (White) */
+.quality1, .quality1 a:link, .quality1 a:active, .quality1 a:visited { color: #4679A6 !important; text-decoration: none; }
+.quality1 a:hover { color: #4679A6 !important; text-decoration: none; text-shadow: 1px 1px 1px rgba(0, 0, 0, .6); }
+
+/* Uncommon (Green) */
+.quality2, .quality2 a:link, .quality2 a:active, .quality2 a:visited { color: #1EFF00 !important; text-decoration: none; }
+.quality2 a:hover { color: #1EFF00 !important; text-decoration: none; text-shadow: 1px 1px 1px rgba(0, 0, 0, .6); }
+
+/* Rare (Blue) */
+.quality3, .quality3 a:link, .quality3 a:active, .quality3 a:visited { color: #0870C1 !important; text-decoration: none; }
+.quality3 a:hover { color: #0870C1 !important; text-decoration: none; text-shadow: 1px 1px 1px rgba(0, 0, 0, .6); }
+
+/* Epic (Purple) */
+.quality4, .quality4 a:link, .quality4 a:active, .quality4 a:visited { color: #9035CF !important; text-decoration: none; }
+.quality4 a:hover { color: #9035CF !important; text-decoration: none; text-shadow: 1px 1px 1px rgba(0, 0, 0, .6); }
+
+/* Legendary (Orange) */
+.quality5, .quality5 a:link, .quality5 a:active, .quality5 a:visited { color: #DE800D !important; text-decoration: none; }
+.quality5 a:hover { color: #DE800D !important; text-decoration: none; text-shadow: 1px 1px 1px rgba(0, 0, 0, .6); }
+
+/* Artifact (Tan-ish) */
+.quality6, .quality6 a:link, .quality6 a:active, .quality6 a:visited { color: #E5CC63 !important; text-decoration: none; }
+.quality6 a:hover { color: #E5CC63 !important; text-decoration: none; text-shadow: 1px 1px 1px rgba(0, 0, 0, .6); }
+
+/* Heirloom (Tan-ish) - Added in Wrath of the Lich King*/
+.quality7, .quality7 a:link, .quality7 a:active, .quality7 a:visited { color: #E5CC63 !important; text-decoration: none; }
+.quality7 a:hover { color: #E5CC63 !important; text-decoration: none; text-shadow: 1px 1px 1px rgba(0, 0, 0, .6); }
+
+/* Quests */
+.quest, .quest a:link, .quest a:active, .quest a:visited { color: #0000FF !important; text-decoration: none; }
+.quest a:hover {color: #0000FF !important; text-decoration: none; text-shadow: 1px 1px 1px rgba(0, 0, 0, .6); }
+
+/* Spells */
+.spell, .spell a:link, .spell a:active, .spell a:visited { color: navy !important; text-decoration: none; }
+.spell a:hover { color: navy !important; text-decoration: none; text-shadow: 1px 1px 1px rgba(0, 0, 0, .6); }
+
+/* Achievements */
+.achievement, .achievement a:link, .achievement a:active, .achievement a:visited, 
+.itemset, .itemset a:link, .itemset a:active, .itemset a:visited {
+	color: #D53057 !important;
+	text-decoration: none;
+}
+.achievement a:hover, .itemset a:hover {
+	color: #D53057 !important;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+}
+
+/* NPC's */
+.npc, .npc a:link, .npc a:active, .npc a:visited { color: #C09E79 !important; text-decoration: none; }
+.npc a:hover { color: #C09E79 !important; text-decoration: none; text-shadow: 1px 1px 1px rgba(0, 0, 0, .6); }
+
+/* Profiles */
+.wow_profile, .wow_profile a:link, .wow_profile a:active, .wow_profile a:visited { color: #4679A6 !important; text-decoration: none; }
+.wow_profile a:hover { color: #4679A6 !important; text-decoration: none; text-shadow: 1px 1px 1px rgba(0, 0, 0, .6); }
+
+/* Guilds */
+.guild, .guild a:link, .guild a:active, .guild a:visited { color: #099F2C !important; text-decoration: none; }
+.guild: a:hover { color: #099F2C !important; text-decoration: none; text-shadow: 1px 1px 1px rgba(0, 0, 0, .6); }
+
+/* Armory */
+.armory, .armory a:link, .armory a:active, .armory a:visited { color: #CFA60C !important; text-decoration: none; }
+.armory a:hover { color: #CFA60C !important; text-decoration: none; text-shadow: 1px 1px 1px rgba(0, 0, 0, .6); }
+
+/* Zones */
+.zone, .zone a:link, .zone a:active, .zone a:visited {color: #6665C2 !important; text-decoration: none; }
+.zone a:hover { color: #6665C2 !important; text-decoration: none; text-shadow: 1px 1px 1px rgba(0, 0, 0, .6); }
+
+/* Objects */
+.wowobject, .wowobject a:link, .wowobject a:active, .wowobject a:visited { color: #DFBE29 !important; text-decoration: none;}
+.wowobject a:hover { color: #DFBE29 !important; text-decoration: none; text-shadow: 1px 1px 3px rgba(0, 0, 0, .6); }
+
+/* Factions */
+.faction, .faction a:link, .faction a:active, .faction a:visited { color: #C09E79 !important; text-decoration: none; }
+.faction a:hover { color: #C09E79 !important; text-decoration: none; text-shadow: 1px 1px 3px rgba(0, 0, 0, .6); }
+
+/* For Item Icons */
+.iconlarge {
+	background: transparent none no-repeat scroll 6px 6px;
+	height: 68px;
+	position: relative;
+	width: 68px;
+	display: inline-block;
+}
+
+.iconlarge .tile {
+	background-image: url(http://static.wowhead.com/images/icon_border_large.png);
+	height: 68px;
+	width: 68px;
+}
+
+.iconlarge a {
+	border: 0 none;
+	display: block;
+	height: 62px;
+	left: 3px;
+	position: absolute;
+	top:3px;
+	width: 62px;
+	z-index: 20;
+}
+
+.iconlarge a:hover {
+	background-position:-62px 0;
+}
+
+.iconmedium {
+	background: transparent none no-repeat scroll 4px 4px;
+	height: 44px;
+	position: relative;
+	width: 44px;
+	display: inline-block;
+}
+
+.iconmedium .tile {
+	background-image: url(http://static.wowhead.com/images/icon_border_medium.png);
+	height: 44px;
+	width: 44px;
+}
+
+.iconmedium a {
+	border: 0 none;
+	display: block;
+	height: 38px;
+	left: 3px;
+	position: absolute;
+	top:3px;
+	width: 38px;
+	z-index: 20;
+}
+
+.iconmedium a:hover {
+	background-position:-38px 0;
+}
+
+.iconsmall {
+	background: transparent none no-repeat scroll 4px 4px;
+	height: 26px;
+	position: relative;
+	width: 26px;
+	display: inline-block;
+}
+
+.iconsmall .tile {
+	background-image: url(http://static.wowhead.com/images/icon_border_small.png);
+	height: 26px;
+	width: 26px;
+
+}
+
+.iconsmall a {
+	background: transparent url(http://static.wowhead.com/images/icon_hilite_small.png) no-repeat scroll 20px 0;
+	border: 0 none;
+	display: block;
+	height: 20px;
+	left: 3px;
+	position: absolute;
+	top:3px;
+	width: 20px;
+	z-index: 20;
+}
+
+.itemname {
+	display: inline;
+	clear: left;
+}
+
+.iconsmall a:hover {
+	background-position:-38px 0;
+	background: transparent url(http://static.wowhead.com/images/icon_hilite_small.png) no-repeat scroll 20px 0;
+}
+
+.qual  { color: #ffd100 !important; position: absolute; padding-top: 2px; padding-left: 2px; }	 /* yellow/description */
+.qual0, .qual0 a { color: gray !important; position: absolute; padding-top: 2px; padding-left: 2px;} /* grey/poor */
+.qual1, .qual1 a { color: #4679A6 !important; position: absolute; padding-top: 2px; padding-left: 2px;} /* white/common */
+.qual2, .qual2 a { color: #1eff00 !important; position: absolute; padding-top: 2px; padding-left: 2px;} /* green/uncommon*/
+.qual3, .qual3 a { color: #0070dd !important; position: absolute; padding-top: 2px; padding-left: 2px;} /* blue/rare */
+.qual4, .qual4 a { color: #a335ee !important; position: absolute; padding-top: 2px; padding-left: 2px;} /* purple/epic */
+.qual5, .qual5 a { color: #ff8000 !important; position: absolute; padding-top: 2px; padding-left: 2px;} /* orange/legendary */
+.qual6, .qual6 a { color: #e5cc80 !important; position: absolute; padding-top: 2px; padding-left: 2px;} /* red/artifact */
+.qual7, .qual7 a { color: #ff0000 !important; position: absolute; padding-top: 2px; padding-left: 2px;}
+.qual8, .qual8 a { color: #ffff98 !important; position: absolute; padding-top: 2px; padding-left: 2px;}
+
+.notfound { color: #FF0000; font-weight: bold; }
+
+ul.itemset-items {
+	list-style-position: inside;
+	padding: 0px;
+	margin: 0px;
+}
+
+li.itemset-item {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+/* Faction Tooltips */
+.faction-table {
+	width: 25%;
+	border: 1px solid #0070DD;
+	color: #0070DD;
+}
+
+.faction-table th {
+	background-color: #0070DD;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+.faction-table td {
+	padding: 5px;
+}
+
+table.wh_outer tbody {
+	border: 0;
+}
+
+table.wh_outer {
+	border: 0;
+	border-spacing: 0; 
+	border-collapse: collapse;
+	background: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	float: none;
+	height: 0;	
+}
+
+table.wowhead_tooltip {
+	border: 0;
+	border-spacing: 0; 
+	border-collapse: collapse;
+	background: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	float: none;
+
+	width: auto;
+	height: 0;
+}
+
+table.wowhead_tooltip td, table.wowhead_tooltip tr, table.wowhead_tooltip th {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	height: 0;
+	text-align: left;
+	background: none;
+}
+
+table.wowhead_tooltip td.top-left {
+	background-image: url(../../../wowhead/images/tooltip.png); 
+	background-position: top left; 
+	height: 4px;
+}
+
+table.wowhead_tooltip td.top-right {
+	background-image: url(../../../wowhead/images/tooltip.png); 
+	background-position: top right; 
+	height: 4px;
+}
+
+table.wowhead_tooltip td.bottom-left {
+	background-image: url(../../../wowhead/images/tooltip.png); 
+	background-position: bottom left; 
+	height: 4px;
+}
+
+table.wowhead_tooltip td.bottom-right {
+	background-image: url(../../../wowhead/images/tooltip.png); 
+	background-position: bottom right; 
+	height: 4px;
+}
+
+table.wowhead_tooltip td.wh_left {
+	background-image: url(../../../wowhead/images/tooltip.png); 
+	background-position: center left;
+}
+
+table.wowhead_tooltip td.wh_left div.wh_right {
+	background-image: url(../../../wowhead/images/tooltip-right.gif); 
+	background-position: center right; 
+	background-repeat: repeat-y;
+
+	padding: 0 8px 0 8px;
+	margin: 0;
+	float: none;
+	text-align: left;
+	width: auto;
+	height: auto;
+}
+
+.wowhead_tooltip {
+	float: none;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	font-family: Verdana, sans-serif;
+	font-variant: normal;
+	font-size: 11px; 
+	line-height: 17px; 
+	color: white; 
+}
+
+
+.wowhead_tooltip { z-index: 100000001; }
+.wowhead_tooltip a { text-decoration: none }
+.wowhead_tooltip a:hover { text-decoration: underline }
+
+.wowhead_tooltip table {
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-right: 0;
+}
+
+.wowhead_tooltip tbody {
+	border: 0;
+}
+
+.wowhead_tooltip table td, .wowhead_tooltip table tr, .wowhead_tooltip table, .wowhead_tooltip table th { border: 0; padding: 0; margin: 0; }
+
+.wowhead_tooltip td, .wowhead_tooltip th { background: none; font-family: Verdana, sans-serif; font-size: 11px; line-height: 17px; color: white; padding: 5px }
+.wowhead_tooltip th { padding: 3px; padding-right: 8px; height: 8px }
+.wowhead_tooltip td { padding: 8px 4px 1px 9px }
+
+.wowhead_tooltip b { font-size: 14px; line-height: 17px; font-weight: normal }
+.wowhead_tooltip div.indent { padding-left: 0.6em }
+
+.wowhead_tooltip td th, .wowhead_tooltip td td { background: none }
+.wowhead_tooltip td th { padding: 0 0 0 4em; text-align: right; font-weight: normal }
+.wowhead_tooltip td td { padding: 0 }
+
+.wowhead_tooltip table.shrink b { font-size: 12px; line-height: 15px }
+.wowhead_tooltip table.shrink td, .wowhead_tooltip table.shrink th { font-size: 10px; line-height: 14px }
+.wowhead_tooltip h3 { color: #FFD100; text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.6); }
+
+.wowhead_tooltip_header {
+	font-size: 16px;
+	color: #FFD100;
+	font-weight: bold;
+	text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.6);
+	padding-bottom: 5px;
+	border-bottom: 1px solid white;
+}
+
+.wowhead_tooltip_footer {
+	font-size: smaller;
+	color: #FFD100;
+	text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.6);
+	padding-top: 5px;
+	text-align: center;
+}
