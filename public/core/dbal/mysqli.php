@@ -29,7 +29,8 @@ class dbal_mysqli extends dbal_common {
 	public function open($host, $database, $user, $password) {
 		// connect to the server
 		// note: persistent connections are not recommended to be used
-		$this->link = @mysqli_connect($host, $user, $password, $database);
+
+		$this->link = mysqli_connect($host, $user, $password, $database);
 		if(!$this->link) {
 			if($this->die_gracefully) {
 				$this->error[] = 'mysqli_connect() failed';

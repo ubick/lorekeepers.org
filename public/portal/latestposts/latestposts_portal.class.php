@@ -190,10 +190,10 @@ class latestposts_portal extends portal_generic {
 			//change prefix
 			if (strlen(trim($this->config->get('pk_latestposts_dbprefix')))) $mydb->set_prefix(trim($this->config->get('pk_latestposts_dbprefix')));
 		}elseif($this->config->get('pk_latestposts_dbmode') == 'new'){
-			$mydb = dbal::factory(array('dbtype' => 'mysql', 'die_gracefully' => true, 'debug_prefix' => 'latestposts_', 'table_prefix' => trim($this->config->get('pk_latestposts_dbprefix'))));
+			$mydb = dbal::factory(array('dbtype' => 'mysqli', 'die_gracefully' => true, 'debug_prefix' => 'latestposts_', 'table_prefix' => trim($this->config->get('pk_latestposts_dbprefix'))));
 			$mydb->open($this->crypt->decrypt($this->config->get('pk_latestposts_dbhost')), $this->crypt->decrypt($this->config->get('pk_latestposts_dbname')), $this->crypt->decrypt($this->config->get('pk_latestposts_dbuser')), $this->crypt->decrypt($this->config->get('pk_latestposts_dbpassword')));
 		}else{
-			$mydb = dbal::factory(array('dbtype' => 'mysql', 'die_gracefully' => true, 'debug_prefix' => 'latestposts_', 'table_prefix' => trim($this->config->get('pk_latestposts_dbprefix'))));
+			$mydb = dbal::factory(array('dbtype' => 'mysqli', 'die_gracefully' => true, 'debug_prefix' => 'latestposts_', 'table_prefix' => trim($this->config->get('pk_latestposts_dbprefix'))));
 			$mydb->open($this->dbhost, $this->dbname, $this->dbuser, $this->dbpass);
 		}
 		
@@ -265,7 +265,7 @@ class latestposts_portal extends portal_generic {
 				$mydb = dbal::factory(array('dbtype' => 'mysql', 'die_gracefully' => true, 'debug_prefix' => 'latestposts_', 'table_prefix' => trim($this->config->get('pk_latestposts_dbprefix'))));
 				$mydb->open($this->crypt->decrypt($this->config->get('pk_latestposts_dbhost')), $this->crypt->decrypt($this->config->get('pk_latestposts_dbname')), $this->crypt->decrypt($this->config->get('pk_latestposts_dbuser')), $this->crypt->decrypt($this->config->get('pk_latestposts_dbpassword')));
 			}else{
-				$mydb = dbal::factory(array('dbtype' => 'mysql', 'die_gracefully' => true, 'debug_prefix' => 'latestposts_', 'table_prefix' => trim($this->config->get('pk_latestposts_dbprefix'))));
+				$mydb = dbal::factory(array('dbtype' => 'mysqli', 'die_gracefully' => true, 'debug_prefix' => 'latestposts_', 'table_prefix' => trim($this->config->get('pk_latestposts_dbprefix'))));
 				$mydb->open($this->dbhost, $this->dbname, $this->dbuser, $this->dbpass);
 			}
 			
@@ -291,7 +291,7 @@ class latestposts_portal extends portal_generic {
 			}else{
 				return $this->user->lang('portal_latestposts_nomodule');
 			}
-			
+
 			// Create Array of allowed/disallowed forums
 			$arrUserMemberships = $this->pdh->get('user_groups_users', 'memberships', array($this->user->id));
 			array_push($arrUserMemberships, 0);
@@ -321,8 +321,7 @@ class latestposts_portal extends portal_generic {
 						}
 					}
 				}
-			}		
-			
+			}
 			// if there are no forums selected and its whitelist
 			if (count($arrForums) == 0 && $black_or_white == 'IN') return $this->user->lang('portal_latestposts_noselectedboards');
 			
@@ -336,7 +335,6 @@ class latestposts_portal extends portal_generic {
 								<th width='10%'>".$this->user->lang('pk_latestposts_posts')."</th>
 								<th width='40%' colspan='2'>".$this->user->lang('pk_latestposts_lastpost')."</th>
 							</tr>";
-				
 				if($bb_result = $mydb->query($strQuery)){
 					$sucess = true;
 					while($row = $mydb->fetch_record($bb_result)){
