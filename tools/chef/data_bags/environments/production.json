@@ -1,18 +1,9 @@
 {
   "id": "production",
   "default_attributes": {
-    "mysql": {
-      "connections": {
-        "default": {
-          "password": "984rbgC42CF342f7j6"
-        }
-      },
-      "users": {
-        "lorekeepers.org": {
-          "database_name": "lorekeepers.org",
-          "password": "B'EvM9bXDm&Tn8Cx"
-        }
-      }
-    }
+    "encrypted_data": "W86f1qL1vx7WFU2nzuPVXrWPdyr9WE0naKHYacoMPs6OkJdYhuXYb+UuOiVC\nmfFcmMCogR7+2P9xdnrCVresCmsZivdS6BHvR7+NkrOeO7XfFN4V98yGs2bO\nnimo0v+0QysbbHq0l1hb5sqzRM3C6sD1bsc7uM/yjpql3R8aWCUBV6PbshUk\nkHoDr5dn4wuCyeA1VUCvSq6yxkuIOWmUmtsPGmeKYCQj4sNvNjFMLNRcMyLM\n5w61fw0zxCFT1sFiEdbvwjPWt/OPCHUYyb/75SyDKz0mHWFngSxRVsgNquTU\nP3JnSYOs2+jRXOSVYUZpgO3xiysPS97nQAxVLJiJi7ICvRxDJCIj48F8bYVw\niEc8EMpVxpNI7V5T9WUvg6i8Cz2oFWsqGqINlD/SkCWeBwN0PM48tcw2Hh10\nddFD6eyJ6L5aRZQLdMMyUsS81WdFKc63u4wOhVx9HeCO8TMbmIvs1yutXeTE\nU4KFumJ1TCiYXhcPyZOVSKqeRmovcxuRcJu4FTUQ8vOHTfD9wAG1j1VXALxq\nm3thkluqW+kAT2v/WSTBlL658TH0kCyUBY/GHvRHMcF1p1+qaARefpLEYw==\n",
+    "iv": "B55LKzrMlPHs5UHSyUsJQw==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
   }
 }

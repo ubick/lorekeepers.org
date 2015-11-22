@@ -1,0 +1,21 @@
+<?php
+
+$ftphost = '127.0.0.1';
+$ftpport = 21;
+$ftpuser = '';
+$ftppass = '';
+$ftproot = '';
+$use_ftp = 0;
+
+$dbtype = 'mysqli';
+$dbhost = 'localhost';
+$dbname = '<%= @params['lorekeep_eqdkp_database_name'] %>';
+$dbuser = '<%= @params['lorekeep_eqdkp_database_user'] %>';
+$dbpass = '<%= @params['lorekeep_eqdkp_database_password'] %>';
+$table_prefix = 'eqdkp07_';
+
+$encryptionKey = '<%= @params['encryption_key'] %>';
+define('EQDKP_INSTALLED', true);
+
+error_reporting(0);
+ini_set('display_errors', 0);

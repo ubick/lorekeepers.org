@@ -26,7 +26,12 @@
         "php56w-soap",
         "php56w-xml",
         "php56w-xmlrpc"
-      ]
+      ],
+      "directives": {
+        "mysql.default_socket": "/var/run/mysql-default/mysqld.sock",
+        "mysqli.default_socket": "/var/run/mysql-default/mysqld.sock",
+        "date.timezone": "Europe/London"
+      }
     }
   },
   "run_list": [

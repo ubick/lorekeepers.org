@@ -7,7 +7,7 @@
   "default_attributes": {
     "apache": {
       "sites": {
-        "lorekeepers.org": {
+        "lorekeepers.org.dev": {
           "inherits": "my-app",
           "server_name": "lorekeepers.org.dev",
           "docroot": "/vagrant/public",

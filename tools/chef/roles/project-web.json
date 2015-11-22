@@ -6,11 +6,11 @@
   "run_list": [
     "recipe[data-bag-merge::environment]",
     "recipe[config-driven-helper::iptables-standard]",
-    "role[db-mysql55-client]",
     "role[php56]",
     "role[web-apache]",
     "recipe[config-driven-helper::capistrano]",
-    "recipe[config-driven-helper::packages]"
+    "recipe[config-driven-helper::packages]",
+    "recipe[lorekeepers::security]"
   ],
   "default_attributes": {
     "apache": {

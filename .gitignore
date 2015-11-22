@@ -22,3 +22,5 @@ node_modules/*
 config.php
 encrypted_data_bag_secret
 public/data/*
+public/config.php
+public/forums/config.php

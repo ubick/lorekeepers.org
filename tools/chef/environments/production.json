@@ -1,5 +1,5 @@
 {
-  "name": "pipeline",
+  "name": "production",
   "description": "",
   "json_class": "Chef::Environment",
   "chef_type": "environment",
@@ -7,9 +7,9 @@
   "default_attributes": {
     "apache": {
       "sites": {
-        "lorekeepers.org-qa": {
+        "lorekeepers.org": {
           "inherits": "my-app",
-          "docroot": "/var/www/lorekeepers.org-qa/current/public",
+          "docroot": "/var/www/lorekeepers.org/current/public",
           "server_name": "lorekeepers.org",
           "capistrano": {
             "deploy_to": "/var/www/lorekeepers.org"
@@ -19,9 +19,20 @@
     },
     "mysql": {
       "users": {
-        "lorekeepers.org": {
-          "database_name": "lorekeepers.org"
+        "lorekeep_eqdkp": {
+          "database_name": "lorekeep_eqdkp"
+        },
+        "lorekeep_forum": {
+          "database_name": "lorekeep_forum"
         }
+      }
+    }
+  },
+
+  "override_attributes": {
+    "data-bag-merge": {
+      "environments": {
+        "encrypted": true
       }
     }
   }
