@@ -142,7 +142,7 @@ abstract class super_registry {
 			
 			if (!defined('MAINTENANCE_MODE')){
 				//Maintenance mode redirect for non admins
-				if(registry::register('config')->get('pk_maintenance_mode') && !registry::fetch('user')->check_auth('a_', false) && !defined('NO_MMODE_REDIRECT')){
+				if(false && registry::register('config')->get('pk_maintenance_mode') && !registry::fetch('user')->check_auth('a_', false) && !defined('NO_MMODE_REDIRECT')){
 					redirect('maintenance/maintenance.php');
 				}
 
