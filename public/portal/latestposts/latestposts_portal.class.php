@@ -262,7 +262,7 @@ class latestposts_portal extends portal_generic {
 				//change prefix
 				if (strlen(trim($this->config->get('pk_latestposts_dbprefix')))) $mydb->set_prefix(trim($this->config->get('pk_latestposts_dbprefix')));
 			}elseif($this->config->get('pk_latestposts_dbmode') == 'new'){
-				$mydb = dbal::factory(array('dbtype' => 'mysql', 'die_gracefully' => true, 'debug_prefix' => 'latestposts_', 'table_prefix' => trim($this->config->get('pk_latestposts_dbprefix'))));
+				$mydb = dbal::factory(array('dbtype' => 'mysqli', 'die_gracefully' => true, 'debug_prefix' => 'latestposts_', 'table_prefix' => trim($this->config->get('pk_latestposts_dbprefix'))));
 				$mydb->open($this->crypt->decrypt($this->config->get('pk_latestposts_dbhost')), $this->crypt->decrypt($this->config->get('pk_latestposts_dbname')), $this->crypt->decrypt($this->config->get('pk_latestposts_dbuser')), $this->crypt->decrypt($this->config->get('pk_latestposts_dbpassword')));
 			}else{
 				$mydb = dbal::factory(array('dbtype' => 'mysqli', 'die_gracefully' => true, 'debug_prefix' => 'latestposts_', 'table_prefix' => trim($this->config->get('pk_latestposts_dbprefix'))));
